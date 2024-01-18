@@ -53,15 +53,3 @@ To generate a docker image native.
 ```
 mvn package -Pnative -Dquarkus.native.container-build=true
 ```
-
-## Configuration
-
-To change default configuration update file [application.properties](src/main/resources/application.properties).
-
-## References
-
-https://www.novixys.com/blog/how-to-generate-rsa-keys-java/
-
-https://quarkus.io/guides/security-jwt#generating-a-jwt
-
-https://quarkus.io/guides/mongodb-panache

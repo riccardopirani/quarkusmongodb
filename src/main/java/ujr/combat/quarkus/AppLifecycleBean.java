@@ -39,7 +39,10 @@ public class AppLifecycleBean {
 					Company company2 = new Company();
 					company2.name ="Amazon";
 					company2.createdByUser = "default@admin.com";
-					Company.persist(Stream.of(company, company1, company2))
+					Company company3 = new Company();
+					company3.name ="Marconi";
+					company3.createdByUser = "riccardo@marconisoftware.com";
+					Company.persist(Stream.of(company, company1, company2,company3))
 							.await()
 							.indefinitely();
 				}
